@@ -1,0 +1,212 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    height: 100vh;
+    background-color: #121212;
+    color: rgb(255, 255, 255);
+
+}
+
+.contenedor{
+    display:flex ;
+    flex-direction: column;
+    padding: 20% 10%;
+    
+}
+
+
+.contenedor h1{
+    font-size: 80px;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+/*Link*/
+.contenedor .link{
+    width: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.contenedor .link .link-img img{
+    height: 50px;
+    color: #ffffff;
+}
+.contenedor .link .link-img{
+    transition: .5s;
+}
+
+.contenedor .link .link-img:hover{
+    transform: scale(1.1);
+}
+
+
+/*Proyectos*/
+.proyectos {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #5A7FA8, #A891D2);
+
+}
+
+.proyectos h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.proyectos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.proyecto-card{
+background: rgba(255, 255, 255, 0.192);
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
+padding: 20px;
+width: 300px;
+
+
+
+
+}
+
+.proyecto-card img{
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.proyecto-card h2{
+    font-size: 20px;
+}
+
+.proyecto-card p{
+    font-size: 15px;
+    font-weight: 300;
+    
+}
+
+.tecnologias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.tecnologias img{
+   width: 40px;
+   filter: drop-shadow(0 4px 4px black);
+   margin-bottom: 25px;
+}
+
+.tecnologias img:hover, .proyecto-card img:hover{
+    transform: scale(1.05);
+}
+
+.btn-ver{
+    background-color: rgb(0, 139, 253);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: azure;
+    transition: 0.5s;
+}
+.btn-ver:hover{
+    background-color: rgb(1, 96, 219);
+}
+
+
+/*Conocimiento*/
+
+.conocimiento{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 50px;
+max-width: 100%;
+background-color: rgb(31, 31, 31);
+gap: 10px;
+}
+
+.conocimiento h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.conoc-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+    
+}
+
+.conoc-herramientas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #2b2b2b;
+
+    width: 200px;
+    height: 400px;
+    padding: 100px;
+    border-radius: 15px;
+    
+
+}
+.conoc-lenguajes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #2b2b2b;
+
+    width: 200px;
+    height: 400px;
+    padding: 100px;
+    border-radius: 15px;
+
+}
+
+.conocimiento img{
+    filter: drop-shadow(0px 0.5px 1px rgb(255, 255, 255));
+    transition: .5s;
+}
+
+.conoc-frameworks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2b2b2b;
+
+    width: 200px;
+    height: 400px;
+    padding: 100px;
+    border-radius: 15px;
+}
+
+.conoc-lenguajes img{
+    height: 100px;
+}
+
+.conoc-herramientas img{
+    height: 100px;
+}
+
+.conocimiento img:hover{
+    transform: scale(1.1);
+}
