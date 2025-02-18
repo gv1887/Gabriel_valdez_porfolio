@@ -10,30 +10,36 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="content-nav">
+            <a href="#" id="link-inico">Inicio</a>
+            <a href="#" id="link-proyectos">Proyectos</a>
+            <a href="#" id="link-contacto">Contacto</a>
+            
             
         </nav>
     </header>
+
     <div class="contenedor">
 
         <div>
-            <h1>Hola, Soy Gabriel</h1>
-            <p>about me </p>
+           <h1>Hola, Soy Gabriel !</h1>
+           <p >about me</p>
         </div>
 
         <div class="link">
             <a target="_blank" class="link-img" href="https://www.linkedin.com/in/gabrielvaldez22/"><img src="img/icons8-linkedin-50.png" alt=""></a>
             <a target="_blank" class="link-img" href="https://github.com/gv1887"><img src="img/icons8-github-60.png" alt=""></a>
+            <a href="pdf/Gabriel_Valdez_Cv.pdf" download="Gabriel_Valdez_Cv.pdf"><button id="btn-desc">Descargar mi CV</button></a>
         </div>
         
     </div>
 
-    <section class="proyectos">
+    <section class="proyectos contenido-fade">
         <h1>Proyectos</h1>
 
         <div class="proyectos-container">
     
-            <div class="proyecto-card">
+            <div class="proyecto-card contenido-fade">
                 <h2>App Clima</h2>
                 <a href="https://gv1887.github.io/Aplicacion_Clima/" target="_blank">
                     <img src="img/App_clima.PNG" alt="App Clima">
@@ -49,7 +55,7 @@
                 <a class="btn-ver" href="https://gv1887.github.io/Aplicacion_Clima/" target="_blank">Ver Proyecto</a>
             </div>
     
-            <div class="proyecto-card">
+            <div class="proyecto-card" style="display: none;">
                 <h2>Otro Proyecto</h2>
                 <a href="#" target="_blank">
                     <img src="img/proyecto_ejemplo.png" alt="Otro Proyecto">
@@ -57,7 +63,7 @@
                 <p>Descripción breve del proyecto. Explicación de qué hace y qué tecnologías se usaron.</p>
                 <a href="#" target="_blank">Ver Proyecto</a>
             </div>
-            <div class="proyecto-card">
+            <div class="proyecto-card" style="display: none;">
                 <h2>Otro Proyecto</h2>
                 <a href="#" target="_blank">
                     <img src="img/proyecto_ejemplo.png" alt="Otro Proyecto">
@@ -70,7 +76,7 @@
         </div>
     </section>
 
-    <section class="conocimiento">
+    <section class="conocimiento contenido-fade">
         <h1>Conocimientos</h1>
 
         <div class="conoc-container">
@@ -93,8 +99,12 @@
             </div>
         </div>
     </section>
+    <div id="volver">
+        <img src="img/icons8-flecha-100.png" alt="">
+
+    </div>
 
     
-    
+    <script src="script.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@ body{
     height: 100vh;
     background-color: #121212;
     color: rgb(255, 255, 255);
-
+    
 }
 
 .contenedor{
@@ -25,21 +25,23 @@ body{
 }
 
 /*Link*/
-.contenedor .link{
-    width: 50px;
+.link{
     display: flex;
+    width: 50px;
     gap: 10px;
+    align-items: center;
+    text-align: center;
 }
 
-.contenedor .link .link-img img{
+.link .link-img img{
     height: 50px;
-    color: #ffffff;
+    
 }
-.contenedor .link .link-img{
+.link .link-img{
     transition: .5s;
 }
 
-.contenedor .link .link-img:hover{
+.link .link-img:hover{
     transform: scale(1.1);
 }
 
@@ -48,14 +50,14 @@ body{
 .proyectos {
     text-align: center;
     padding: 50px;
-    background: linear-gradient(to right, #5A7FA8, #A891D2);
+    background: linear-gradient(to right, #0e3158, #3a71e9);
 
 }
 
 .proyectos h1 {
     font-size: 40px;
     margin-bottom: 20px;
-    color: #333;
+    color: #ffffff;
 }
 
 .proyectos-container{
@@ -74,9 +76,6 @@ border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
 padding: 20px;
 width: 300px;
-
-
-
 
 }
 
@@ -135,7 +134,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
-padding: 50px;
+padding: 100px;
 max-width: 100%;
 background-color: rgb(31, 31, 31);
 gap: 10px;
@@ -183,7 +182,7 @@ gap: 10px;
 }
 
 .conocimiento img{
-    filter: drop-shadow(0px 0.5px 1px rgb(255, 255, 255));
+    filter: drop-shadow(0px 0.5px 3px #030303);
     transition: .5s;
 }
 
@@ -199,6 +198,7 @@ gap: 10px;
     border-radius: 15px;
 }
 
+
 .conoc-lenguajes img{
     height: 100px;
 }
@@ -209,4 +209,69 @@ gap: 10px;
 
 .conocimiento img:hover{
     transform: scale(1.1);
+}
+
+/*nav*/
+#content-nav{
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    padding: 10px;
+    gap: 20px;
+    
+}
+
+#content-nav a{
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#btn-desc{
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 15px;   
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#btn-desc:hover{
+    background-color: #bebebe;
+}
+
+#content-nav a:hover{
+    color: #7690b8;
+
+}
+#volver{
+    position: fixed;
+    cursor: pointer;
+    left: 95%;
+    bottom: 1%;
+}
+
+#volver img{
+    width: 50px;
+    filter: drop-shadow(0px 0.5px 3px #030303);
+    transition: 1s;
+}
+
+#volver img:hover{
+    transform: scale(1.1);
+}
+
+/*efecto fade*/
+
+.contenido-fade{
+    opacity: 0;
+    
+    transition: opacity 1s ease-out;
+}
+
+.contenido-fade.visible {
+    opacity: 1;
+
 }
