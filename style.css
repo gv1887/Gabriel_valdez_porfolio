@@ -16,6 +16,9 @@ body{
     
 }
 
+.contenedor p{
+    width: 50%;
+}
 
 .contenedor h1{
     font-size: 80px;
