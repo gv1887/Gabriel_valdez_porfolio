@@ -1,54 +1,105 @@
-body{
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     height: 100vh;
     background-color: #121212;
     color: rgb(255, 255, 255);
-    
+
 }
 
-.contenedor{
-    display:flex ;
+
+/*nav*/
+#content-nav {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 10px;
+    margin-right: 10px;
+    gap: 20px;
+
+
+}
+
+#content-nav a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+#content-nav a:hover {
+    color: #7690b8;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* contenedor */
+.contenedor {
+    display: flex;
     flex-direction: column;
-    padding: 20% 10%;
-    
+    padding: 15% 10%;
+
 }
 
-.contenedor p{
+.contenedor p {
     width: 50%;
 }
 
-.contenedor h1{
+.contenedor h1 {
     font-size: 80px;
     margin-bottom: 10px;
     font-weight: bold;
 
 }
 
-/*Link*/
-.link{
+
+/*link linkdln,git,cv*/
+.link {
     display: flex;
-    width: 50px;
+    width: 60px;
     gap: 10px;
     align-items: center;
     text-align: center;
 }
 
-.link .link-img img{
+.link .link-img img {
     height: 50px;
-    
+
 }
-.link .link-img{
+
+.link .link-img {
     transition: .5s;
 }
 
-.link .link-img:hover{
+.link .link-img:hover {
     transform: scale(1.1);
 }
 
+#btn-desc {
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
+#btn-desc:hover {
+    background-color: #bebebe;
+}
 /*Proyectos*/
 .proyectos {
     text-align: center;
@@ -63,7 +114,7 @@ body{
     color: #ffffff;
 }
 
-.proyectos-container{
+.proyectos-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -73,50 +124,54 @@ body{
     margin: 0 auto;
 }
 
-.proyecto-card{
-background: rgba(255, 255, 255, 0.192);
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
-padding: 20px;
-width: 300px;
+.proyecto-card {
+    background: rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
+    padding: 20px;
+    width: 300px;
 
 }
 
-.proyecto-card img{
+.proyecto-card img {
     width: 100%;
+    height: 290px;
     border-radius: 15px;
     transition: 0.5s;
 }
 
-.proyecto-card h2{
+.proyecto-card h2 {
     font-size: 20px;
 }
 
-.proyecto-card p{
+.proyecto-card p {
     font-size: 15px;
     font-weight: 300;
-    
+
 }
 
-.tecnologias{
+.tecnologias {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+
+
+
 }
 
-.tecnologias img{
-   width: 40px;
-   filter: drop-shadow(0 4px 4px black);
-   margin-bottom: 25px;
+.tecnologias img {
+    height: 100%;
+    width: 40px;
+    filter: drop-shadow(0 4px 4px black);
+    margin-bottom: 25px;
 }
 
-.tecnologias img:hover, .proyecto-card img:hover{
+.tecnologias img:hover,
+.proyecto-card img:hover {
     transform: scale(1.05);
 }
 
-.btn-ver{
+.btn-ver {
     background-color: rgb(0, 139, 253);
     padding: 10px;
     border-radius: 5px;
@@ -124,153 +179,80 @@ width: 300px;
     color: azure;
     transition: 0.5s;
 }
-.btn-ver:hover{
+
+.btn-ver:hover {
     background-color: rgb(1, 96, 219);
 }
 
 
 /*Conocimiento*/
 
-.conocimiento{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-padding: 100px;
-max-width: 100%;
-background-color: rgb(31, 31, 31);
-gap: 10px;
+.conocimiento {
+  
+    text-align: center;
+    padding: 100px;
+    max-width: 100%;
+    background-color: rgb(31, 31, 31);
+    gap: 10px;
 }
 
-.conocimiento h1{
+.conocimiento h1 {
     font-size: 40px;
     margin-bottom: 20px;
     color: #ffffff;
 }
 
-.conoc-container{
+.conocimiento-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    
-    
+
+
 }
 
-.conoc-herramientas{
+/*lista conocimientos*/
+.list-conocimientos
+{
+width: 300px;
+
+}
+
+.list-conocimientos img{
+    width: 30px;
+}
+
+/*Educaion*/
+
+.educacion{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    background-color: #2b2b2b;
-
-    width: 200px;
-    height: 400px;
-    padding: 100px;
-    border-radius: 15px;
-    
-
-}
-.conoc-lenguajes{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: #2b2b2b;
-
-    width: 200px;
-    height: 400px;
-    padding: 100px;
-    border-radius: 15px;
-
-}
-
-.conocimiento img{
-    filter: drop-shadow(0px 0.5px 3px #030303);
-    transition: .5s;
-}
-
-.conoc-frameworks{
-    display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    background-color: #2b2b2b;
-
-    width: 200px;
-    height: 400px;
-    padding: 100px;
-    border-radius: 15px;
-}
-
-
-.conoc-lenguajes img{
-    height: 100px;
-}
-
-.conoc-herramientas img{
-    height: 100px;
-}
-
-.conocimiento img:hover{
-    transform: scale(1.1);
-}
-
-/*nav*/
-#content-nav{
-    display: flex;
-    justify-content: end;
-    text-align: center;
-    padding: 10px;
-    gap: 20px;
     
 }
 
-#content-nav a{
-    color:white;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-#btn-desc{
-    border: none;
-    border-radius: 10px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    padding: 15px;   
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-#btn-desc:hover{
-    background-color: #bebebe;
-}
-
-#content-nav a:hover{
-    color: #7690b8;
-
-}
-#volver{
+#volver {
     position: fixed;
     cursor: pointer;
     left: 95%;
     bottom: 1%;
 }
 
-#volver img{
+#volver img {
     width: 50px;
     filter: drop-shadow(0px 0.5px 3px #030303);
     transition: 1s;
 }
 
-#volver img:hover{
+#volver img:hover {
     transform: scale(1.1);
 }
 
 /*efecto fade*/
 
-.contenido-fade{
+.contenido-fade {
     opacity: 0;
-    
+
     transition: opacity 1s ease-out;
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,43 +9,114 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <nav id="content-nav">
             <a href="#" id="link-inico">Inicio</a>
             <a href="#" id="link-proyectos">Proyectos</a>
             <a href="#" id="link-contacto">Contacto</a>
-            
-            
+
+
         </nav>
     </header>
 
     <div class="contenedor">
 
         <div>
-           <h1>Hola, Soy Gabriel !</h1>
-           <p >Titulado en Análisis de Sistemas y especializado en desarrollo back-end con Django. Actualmente, estoy ampliando mis conocimientos en desarrollo front-end con React. Me interesa crear aplicaciones web funcionales y escalables, siempre buscando mejorar mis habilidades y afrontar nuevos desafíos</p>
+            <h1>Hola, Soy Gabriel !</h1>
+            <p>Titulado en Análisis de Sistemas y especializado en desarrollo back-end con Django. Actualmente, estoy
+                ampliando mis conocimientos en desarrollo front-end con React. Me interesa crear aplicaciones web
+                funcionales y escalables, siempre buscando mejorar mis habilidades y afrontar nuevos desafíos</p>
         </div>
 
         <div class="link">
-            <a target="_blank" class="link-img" href="https://www.linkedin.com/in/gabrielvaldez22/"><img src="img/icons8-linkedin-50.png" alt=""></a>
-            <a target="_blank" class="link-img" href="https://github.com/gv1887"><img src="img/icons8-github-60.png" alt=""></a>
-            <a href="pdf/Gabriel_Valdez_Cv.pdf" download="Gabriel_Valdez_Cv.pdf"><button id="btn-desc">Descargar mi CV</button></a>
+            <a target="_blank" class="link-img" href="https://www.linkedin.com/in/gabrielvaldez22/"><img
+                    src="img/icons8-linkedin-50.png" alt=""></a>
+            <a target="_blank" class="link-img" href="https://github.com/gv1887"><img src="img/icons8-github-60.png"
+                    alt=""></a>
+            <a href="pdf/Gabriel_Valdez_Cv.pdf" download="Gabriel_Valdez_Cv.pdf"><button id="btn-desc">Descargar mi
+                    CV</button></a>
         </div>
-        
+
     </div>
+
+    <section class="conocimiento contenido-fade">
+        <h1>Conocimientos</h1>
+
+        <div class="conocimiento-container">
+            <div class="list-conocimientos">
+                <img src="img/icons8-código-64.png" alt="">
+
+                <h3>Programación</h3>
+                <p>Python , JavaScript</p>
+            </div>
+            <div class="list-conocimientos">
+                <img src="img/icons8-web-64.png" alt="">
+
+                <h3>Desarrollo Web</h3>
+                <p>Html , CSS , JavaScript <br> React (aprendiendo) </p>
+            </div>
+            <div class="list-conocimientos">
+                <img src="img/icons8-base-de-datos-64.png" alt="">
+                <h3>Bases de Datos</h3>
+                <p>PostgreSQL , MySql</p>
+            </div>
+
+            <div class="list-conocimientos">
+                <img src="img/icons8-herramienta-64.png" alt="">
+                <h3>Herramientas y Tecnologías</h3>
+                <p>Git , Django </p>
+            </div>
+        </div>
+
+        <section class="conocimiento contenido-fade">
+            <h1>Educación</h1>
+            <div class="educacion">
+                <img src="img/icons8-gorro-de-graduación-64.png" alt="">
+                <h3>Tecnicatura Superior en Análisis de Sistemas</h3>
+                <p>ISFDyT 210 - Abril 2022 - Noviembre 2024</p>
+            </div>
+
+        </section>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section class="proyectos contenido-fade">
         <h1>Proyectos</h1>
 
+
         <div class="proyectos-container">
-    
+            <!-------------------------------- Proyecto 1 ---------------------->
+
             <div class="proyecto-card contenido-fade">
                 <h2>App Clima</h2>
                 <a href="https://gv1887.github.io/Aplicacion_Clima/" target="_blank">
                     <img src="img/App_clima.PNG" alt="App Clima">
                 </a>
-                <p>Utiliza la API de OpenWeatherMap para obtener datos en tiempo real y mostrar la temperatura, y condiciones meteorológicas de cualquier ciudad ingresada por el usuario.</p>
+                <p>Utilice la API de OpenWeatherMap para obtener datos en tiempo real y mostrar la temperatura, y
+                    condiciones meteorológicas de cualquier ciudad ingresada por el usuario.</p>
 
                 <h3>Tecnologias Utilizadas</h3>
                 <div class="tecnologias">
@@ -54,7 +126,25 @@
                 </div>
                 <a class="btn-ver" href="https://gv1887.github.io/Aplicacion_Clima/" target="_blank">Ver Proyecto</a>
             </div>
-    
+            <!-------------------------------- Proyecto 2 ---------------------->
+            <div class="proyecto-card contenido-fade">
+                <h2>ToDoApp</h2>
+                <a href="https://gv1887.github.io/ToDoApp/" target="_blank">
+                    <img src="img/ToDoApp.PNG" alt="Proyecto ToDoApp">
+                </a>
+                <p>Una aplicación práctica y eficiente para organizar tareas diarias. Con una interfaz intuitiva y fácil
+                    de usar, te permite agregar, eliminar y marcar tareas como completadas.</p>
+                <h3>Tecnologias Utilizadas</h3>
+                <div class="tecnologias">
+                    <img src="img/icons8-html-480.png" alt="">
+                    <img src="img/icons8-css-480.png" alt="">
+                    <img src="img/icons8-js-480.png" alt="">
+                </div>
+                <a class="btn-ver" href="https://gv1887.github.io/ToDoApp/" target="_blank">Ver Proyecto</a>
+            </div>
+
+
+
             <div class="proyecto-card" style="display: none;">
                 <h2>Otro Proyecto</h2>
                 <a href="#" target="_blank">
@@ -63,48 +153,14 @@
                 <p>Descripción breve del proyecto. Explicación de qué hace y qué tecnologías se usaron.</p>
                 <a href="#" target="_blank">Ver Proyecto</a>
             </div>
-            <div class="proyecto-card" style="display: none;">
-                <h2>Otro Proyecto</h2>
-                <a href="#" target="_blank">
-                    <img src="img/proyecto_ejemplo.png" alt="Otro Proyecto">
-                </a>
-                <p>Descripción breve del proyecto. Explicación de qué hace y qué tecnologías se usaron.</p>
-                <a href="#" target="_blank">Ver Proyecto</a>
-            </div>
 
-    
+
         </div>
     </section>
 
-    <section class="conocimiento contenido-fade">
-        <h1>Conocimientos</h1>
 
-        <div class="conoc-container">
-            <div class="conoc-herramientas">
-                <h2>Herramientas</h2>
-                <img src="img/icons8-mysql-480.png" alt="">
-                <img src="img/icons8-git-480.png" alt="">
-            </div>
-            <div class="conoc-lenguajes">
-                <h2>Lenguajes de programacion</h2>
-                <img src="img/icons8-python-480.png" alt="">
-                <img src="img/icons8-js-480.png" alt="">
-                <img src="img/icons8-html-480.png" alt="">
-                <img src="img/icons8-css-480.png" alt="">
-                <img src="img/Sql_logo.png" alt="">
-            </div>
-            <div class="conoc-frameworks">
-                <h2>Frameworks</h2>
-                <img src="img/icons8-django-480.png" alt="">
-            </div>
-        </div>
-    </section>
-    <div id="volver">
-        <img src="img/icons8-flecha-100.png" alt="">
 
-    </div>
-
-    
     <script src="script.js"></script>
 </body>
+
 </html>
