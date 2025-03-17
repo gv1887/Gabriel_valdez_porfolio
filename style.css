@@ -100,11 +100,12 @@ body {
 #btn-desc:hover {
     background-color: #bebebe;
 }
+
 /*Proyectos*/
 .proyectos {
     text-align: center;
     padding: 50px;
-    background: linear-gradient(to right, #0e3158, #3a71e9);
+    background: linear-gradient(to right, #000000, #2b2b2b);
 
 }
 
@@ -172,11 +173,11 @@ body {
 }
 
 .btn-ver {
-    background-color: rgb(0, 139, 253);
+    background-color: rgb(253, 253, 253);
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
-    color: azure;
+    color: rgb(0, 0, 0);
     transition: 0.5s;
 }
 
@@ -188,7 +189,7 @@ body {
 /*Conocimiento*/
 
 .conocimiento {
-  
+
     text-align: center;
     padding: 100px;
     max-width: 100%;
@@ -205,48 +206,82 @@ body {
 .conocimiento-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
 
 
 }
 
 /*lista conocimientos*/
-.list-conocimientos
-{
-width: 300px;
+.list-conocimientos {
+    width: 300px;
+    margin-top: 100px;
 
 }
 
-.list-conocimientos img{
+.list-conocimientos img {
     width: 30px;
 }
 
-/*Educaion*/
+/*Educacion*/
 
-.educacion{
+.educacion {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
-#volver {
-    position: fixed;
+/*Cursos*/
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 300px;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+.info {
+    display: none;
+}
+
+.info-mostrar {
+    display: block;
+    font-style: italic;
+    text-decoration: none;
+    color: #bebebe;   
+}
+.info-mostrar:hover{
+    background-color: rgba(255, 255, 255, 0.048);
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+
+
+.titulo-curso-name {
+    width: 500px;
+    border: none;
+    padding: 10px;
     cursor: pointer;
-    left: 95%;
-    bottom: 1%;
+    font-size: 15px;
+    background-color: #ddd9d92c;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 
-#volver img {
-    width: 50px;
-    filter: drop-shadow(0px 0.5px 3px #030303);
-    transition: 1s;
+.titulo-curso-name:hover{
+    background-color: #ddd9d949;
+}
+.titulo-curso-name:active{
+    background-color: #5c5c5c5e;
 }
 
-#volver img:hover {
-    transform: scale(1.1);
-}
 
 /*efecto fade*/
 
