@@ -349,16 +349,28 @@ body {
 
 
     body{
+        padding: 0;
+        margin: 0;
         width: 100vh;
         display: flex;
         flex-direction: column;
+        
+        
+
         
     }
 
     #content-nav{
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column;  
+        width: 100%;
+    }
+
+    #content-nav a{
+        font-size: 40px;
+        background-color: #30313136;
+        padding: 10px;
     }
    
     .presentacion{
@@ -368,17 +380,33 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
-
+        
+        
+    }
+    .presentacion p{
+        width: 100%;
+        text-wrap: wrap;
+        font-size: 30px;
     }
     
     .link{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-
+        width: 100%;  
     }
+   .conocimiento{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
 
+   }
+   .conocimiento-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+   }
     
     
 }
