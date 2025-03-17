@@ -4,7 +4,13 @@ document.getElementById('link-proyectos').addEventListener('click', (e) => {
     proyectos.scrollIntoView({ behavior: 'smooth' })
 });
 
+document.getElementById('link-contacto').addEventListener('click', (e) => {
+    e.preventDefault()
+    const proyectos = document.querySelector('.content-contacto')
+    proyectos.scrollIntoView({ behavior: 'smooth' })
+});
 
+//botones cursos
 document.querySelectorAll('.titulo-curso-name').forEach((btn) => {
     btn.addEventListener('click', (e) => {
         e.preventDefault()
@@ -16,8 +22,7 @@ document.querySelectorAll('.titulo-curso-name').forEach((btn) => {
     })
 })
 
-
-
+//scroll-fade
 window.addEventListener('scroll', () => {
     let elementos = document.querySelectorAll('.contenido-fade');
 
@@ -32,8 +37,14 @@ window.addEventListener('scroll', () => {
         }
 
     })
+})
 
-
-
+document.getElementById('copiarCorreo').addEventListener('click',() =>{
+    const correo = 'valdezgabriel47@gmail.com'
+    navigator.clipboard.writeText(correo).then(()=>{
+        alert('Correo copiado 📋');
+    }).catch(err =>{
+        console.error('Error al copiar' ,err)
+    })
 
 })

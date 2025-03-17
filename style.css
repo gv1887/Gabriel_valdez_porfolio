@@ -183,6 +183,7 @@ body {
 
 .btn-ver:hover {
     background-color: rgb(1, 96, 219);
+    color: #ffffff;
 }
 
 
@@ -191,7 +192,7 @@ body {
 .conocimiento {
 
     text-align: center;
-    padding: 100px;
+    padding: 60px;
     max-width: 100%;
     background-color: rgb(31, 31, 31);
     gap: 10px;
@@ -254,9 +255,10 @@ body {
     display: block;
     font-style: italic;
     text-decoration: none;
-    color: #bebebe;   
+    color: #bebebe;
 }
-.info-mostrar:hover{
+
+.info-mostrar:hover {
     background-color: rgba(255, 255, 255, 0.048);
     border-radius: 5px;
     text-decoration: underline;
@@ -275,10 +277,11 @@ body {
     border-radius: 5px;
 }
 
-.titulo-curso-name:hover{
+.titulo-curso-name:hover {
     background-color: #ddd9d949;
 }
-.titulo-curso-name:active{
+
+.titulo-curso-name:active {
     background-color: #5c5c5c5e;
 }
 
@@ -294,4 +297,88 @@ body {
 .contenido-fade.visible {
     opacity: 1;
 
+}
+
+/*Footer*/
+
+.content-contacto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+.contacto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.correo{
+    width: 200px;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+
+
+#copiarCorreo{
+    height: 44.1px;
+    width: 40px;
+    border-radius: 0 10px 10px 0;
+    border: none;   
+    cursor: pointer;
+}
+#copiarCorreo:active{
+    background-color: #a0a0a0;
+}
+
+#copiarCorreo img{
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:800px){
+
+
+    body{
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #content-nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+   
+    .presentacion{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+    
+    .link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    
+    
 }
