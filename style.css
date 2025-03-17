@@ -407,6 +407,43 @@ body {
     text-align: center;
 
    }
+
+   .content-contacto{
+    display: flex;
+    padding: 20px;
+    font-size: 25px;
+   }
     
-    
+    .correo{
+        width: 360px;
+    }
+    #copiarCorreo{
+        width: 60px;
+        height: 80px;
+    }
+
+    .proyectos-container{
+        width: 100%;
+        font-size: 20px;
+        display: flex;
+        
+        align-items: center;
+    }
+
+    .proyecto-card{
+        padding: 20px;
+        
+    }
+
+    .proyecto-card p{
+        width: 100%;
+        font-size: 20px;
+        
+    }
+
+    .titulo-curso-name{
+        width: 50vh;
+        padding: 20px;
+        font-size: 20px;
+    }
 }
